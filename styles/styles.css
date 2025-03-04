@@ -1,35 +1,47 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Gotham', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #333;
 }
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+.neon{
+    text-shadow: 0 0 10px #51d3d9, 0 0 20px #51d3d9, 0 0 30px #51d3d9 ;
 }
 
-header h1 {
+header {  
+    background-color: #333;
+    color: #fff;
+    padding: 20px;    
+}
+
+h1 {
+    color: #fff;
+    font-size: 2em;
     margin: 0;
+    padding: 20px;
+           
 }
 
 nav {
     background-color: #444;
-    overflow: hidden;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    align-self: center;
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
 }
 
-nav a {
-    float: left;
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    list-style: none;
-}
+
 
 nav a:hover {
     background-color: #ddd;
@@ -37,19 +49,9 @@ nav a:hover {
 }
 
 .container {
-    width: 80%;
-    margin: 20px auto;
-    background-color: #333;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+ 
 }
