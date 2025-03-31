@@ -15,14 +15,17 @@
         <div class="header">
             <nav class="navbar">                
                 <h1 class="neon" href="#">Digitech - Express</h1>
-                <div>
-                    <ul class="nav_bar">
-                        <li class="nav_item"><a href="#main">Inicio</a></li>
-                        <li class="nav_item"><a href="#services">Servicios</a></li>
-                        <li class="nav_item"><a href="#contact">Contacto</a></li>
-                        <li class="nav_item"><a href="#cost">Cotizacion</a></li>
-                    </ul>              
-                </div>                
+                <div class="overlay" id="overlay" onclick="document.getElementById('sidebar').classList.remove('active'); document.getElementById('overlay').classList.remove('active')"></div>
+                <div class="sidebar" id="sidebar">
+                    <button class="close-btn" onclick="document.getElementById('sidebar').classList.remove('active'); document.getElementById('overlay').classList.remove('active')">&times;</button>
+                    <ul>
+                        <li><a href="#main">Inicio</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="#cost">Cotización</a></li>
+                    </ul>
+                </div>
+                <button class="open-btn" onclick="document.getElementById('sidebar').classList.add('active'); document.getElementById('overlay').classList.add('active')">&#9776;</button>               
             </nav>
         </div>
     </section>
