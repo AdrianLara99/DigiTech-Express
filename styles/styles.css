@@ -109,6 +109,7 @@ header {
 .navbar {
     position: fixed;
     width: 100%;
+    
 }
 
 h1 {
@@ -119,6 +120,9 @@ h1 {
            
 }
 
+.navlink {
+    display: none;
+}
 nav {
     background-color: #444;
     justify-content: space-between;
@@ -198,7 +202,18 @@ img.logo {
 }
 
 @media (min-width: 750px){
+    .navlink {
+        display: flex; /* Mostrar los enlaces de navegación en pantallas más grandes */
+        justify-content: space-around;
+        align-self: center;
+        flex: wrap;
+    
+    }
+    
       
+    .open-btn {
+        display: none; /* Ocultar el botón del sidebar */
+    }
     .cards{
         display: flex;
         justify-content: space-between;
@@ -212,6 +227,7 @@ img.logo {
         display: flex;
         justify-content: space-between;
     }
+    
 }
 @media (min-width: 1000px){
     .nav_bar {
